@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		148F837D382A69EB972005DE /* Pods_justdoit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5685F174020FB6B483DAADAC /* Pods_justdoit.framework */; };
+		E415556D2784766900FB6145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E415556C2784766900FB6145 /* AppDelegate.swift */; };
+		E415556F2784766900FB6145 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E415556E2784766900FB6145 /* SceneDelegate.swift */; };
+		E41555742784766900FB6145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41555722784766900FB6145 /* Main.storyboard */; };
+		E41555772784766900FB6145 /* justdoit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E41555752784766900FB6145 /* justdoit.xcdatamodeld */; };
+		E41555792784766A00FB6145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41555782784766A00FB6145 /* Assets.xcassets */; };
+		E415557C2784766A00FB6145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E415557A2784766A00FB6145 /* LaunchScreen.storyboard */; };
+		E4155584278480D900FB6145 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4155583278480D900FB6145 /* CategoryTableViewController.swift */; };
+		E4155589278493D900FB6145 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4155588278493D900FB6145 /* TodoTableViewController.swift */; };
+		E47D5C8A2790113A0040B5A6 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D5C892790113A0040B5A6 /* Todo.swift */; };
+		E4F75DD8278EE6BF00E4EBED /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F75DD7278EE6BF00E4EBED /* Category.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111EE847BA315A58999F6D84 /* Pods-justdoit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-justdoit.release.xcconfig"; path = "Target Support Files/Pods-justdoit/Pods-justdoit.release.xcconfig"; sourceTree = "<group>"; };
+		5685F174020FB6B483DAADAC /* Pods_justdoit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_justdoit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ADBB8DD7C4A5D25E2B07C10 /* Pods-justdoit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-justdoit.debug.xcconfig"; path = "Target Support Files/Pods-justdoit/Pods-justdoit.debug.xcconfig"; sourceTree = "<group>"; };
+		E41555692784766900FB6145 /* justdoit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = justdoit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E415556C2784766900FB6145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E415556E2784766900FB6145 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E41555732784766900FB6145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E41555762784766900FB6145 /* justdoit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = justdoit.xcdatamodel; sourceTree = "<group>"; };
+		E41555782784766A00FB6145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E415557B2784766A00FB6145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E415557D2784766A00FB6145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4155583278480D900FB6145 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		E4155588278493D900FB6145 /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		E47D5C892790113A0040B5A6 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		E4F75DD7278EE6BF00E4EBED /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E41555662784766900FB6145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148F837D382A69EB972005DE /* Pods_justdoit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		264D2B01A75ECE3304F998E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ADBB8DD7C4A5D25E2B07C10 /* Pods-justdoit.debug.xcconfig */,
+				111EE847BA315A58999F6D84 /* Pods-justdoit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C643C8A8B02B044FA9A83D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5685F174020FB6B483DAADAC /* Pods_justdoit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E41555602784766900FB6145 = {
+			isa = PBXGroup;
+			children = (
+				E415556B2784766900FB6145 /* justdoit */,
+				E415556A2784766900FB6145 /* Products */,
+				264D2B01A75ECE3304F998E9 /* Pods */,
+				3C643C8A8B02B044FA9A83D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E415556A2784766900FB6145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41555692784766900FB6145 /* justdoit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E415556B2784766900FB6145 /* justdoit */ = {
+			isa = PBXGroup;
+			children = (
+				E41555872784847500FB6145 /* Model */,
+				E41555862784845F00FB6145 /* View */,
+				E41555852784844D00FB6145 /* Controller */,
+				E415556C2784766900FB6145 /* AppDelegate.swift */,
+				E415556E2784766900FB6145 /* SceneDelegate.swift */,
+				E41555782784766A00FB6145 /* Assets.xcassets */,
+				E415557A2784766A00FB6145 /* LaunchScreen.storyboard */,
+				E415557D2784766A00FB6145 /* Info.plist */,
+				E41555752784766900FB6145 /* justdoit.xcdatamodeld */,
+			);
+			path = justdoit;
+			sourceTree = "<group>";
+		};
+		E41555852784844D00FB6145 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4155583278480D900FB6145 /* CategoryTableViewController.swift */,
+				E4155588278493D900FB6145 /* TodoTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E41555862784845F00FB6145 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E41555722784766900FB6145 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E41555872784847500FB6145 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4F75DD7278EE6BF00E4EBED /* Category.swift */,
+				E47D5C892790113A0040B5A6 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E41555682784766900FB6145 /* justdoit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41555802784766A00FB6145 /* Build configuration list for PBXNativeTarget "justdoit" */;
+			buildPhases = (
+				4ED6C6B81DCA12378A3E48FD /* [CP] Check Pods Manifest.lock */,
+				E41555652784766900FB6145 /* Sources */,
+				E41555662784766900FB6145 /* Frameworks */,
+				E41555672784766900FB6145 /* Resources */,
+				5375CBF0796B01C4AF43569B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = justdoit;
+			productName = justdoit;
+			productReference = E41555692784766900FB6145 /* justdoit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41555612784766900FB6145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E41555682784766900FB6145 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = E41555642784766900FB6145 /* Build configuration list for PBXProject "justdoit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E41555602784766900FB6145;
+			productRefGroup = E415556A2784766900FB6145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E41555682784766900FB6145 /* justdoit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E41555672784766900FB6145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E415557C2784766A00FB6145 /* LaunchScreen.storyboard in Resources */,
+				E41555792784766A00FB6145 /* Assets.xcassets in Resources */,
+				E41555742784766900FB6145 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ED6C6B81DCA12378A3E48FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-justdoit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5375CBF0796B01C4AF43569B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-justdoit/Pods-justdoit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-justdoit/Pods-justdoit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-justdoit/Pods-justdoit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E41555652784766900FB6145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47D5C8A2790113A0040B5A6 /* Todo.swift in Sources */,
+				E415556D2784766900FB6145 /* AppDelegate.swift in Sources */,
+				E4155589278493D900FB6145 /* TodoTableViewController.swift in Sources */,
+				E4155584278480D900FB6145 /* CategoryTableViewController.swift in Sources */,
+				E415556F2784766900FB6145 /* SceneDelegate.swift in Sources */,
+				E41555772784766900FB6145 /* justdoit.xcdatamodeld in Sources */,
+				E4F75DD8278EE6BF00E4EBED /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E41555722784766900FB6145 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41555732784766900FB6145 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E415557A2784766A00FB6145 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E415557B2784766A00FB6145 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E415557E2784766A00FB6145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E415557F2784766A00FB6145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E41555812784766A00FB6145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ADBB8DD7C4A5D25E2B07C10 /* Pods-justdoit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9WLAJD88N;
+				INFOPLIST_FILE = justdoit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = surafel.justdoit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E41555822784766A00FB6145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 111EE847BA315A58999F6D84 /* Pods-justdoit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9WLAJD88N;
+				INFOPLIST_FILE = justdoit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = surafel.justdoit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E41555642784766900FB6145 /* Build configuration list for PBXProject "justdoit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E415557E2784766A00FB6145 /* Debug */,
+				E415557F2784766A00FB6145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41555802784766A00FB6145 /* Build configuration list for PBXNativeTarget "justdoit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41555812784766A00FB6145 /* Debug */,
+				E41555822784766A00FB6145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E41555752784766900FB6145 /* justdoit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E41555762784766900FB6145 /* justdoit.xcdatamodel */,
+			);
+			currentVersion = E41555762784766900FB6145 /* justdoit.xcdatamodel */;
+			path = justdoit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E41555612784766900FB6145 /* Project object */;
+}
